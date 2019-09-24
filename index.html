@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <script src="hitung.js"></script>
+   <title>Electric Calculator</title>
+</head>
+<body>
+    <div>
+            <img class="img-responsive" src="ground.jpg">
+            <h1>Calculator Electric</h1>
+            <p style="border: 1px solid rgb(104, 248, 169); height: 135px; overflow: auto; padding: 10px; text-align: justify; width: 350px;">
+                    Kalkulator Electic adalah kalkulator khusus untuk Teknisi kelistrikan. Digunakan untuk menghitung beban dalam sebuah rangkaian listrik, menghitung konsumsi daya pada perangkat, mengkalkulasi kebutuhan daya pada industri, dll. Adapun metode perhitungan kalkulator electric dengan meneraplan hukum kelistrikan OHM : <br>
+                    <b> V  = I x R  &  P  = I x V</b> <br>
+                    <b> R  = V / I  &  I  = V / R</b> <br>
+                    <br>
+                    <b>Dimana : <br>
+                        P = Power/Daya (Watt,W) <br>
+                        I = Intencity / Arus (Amper,A) <br>
+                        V = Voltage/Tegangan (V) <br>
+                        R = Resistance/Hambatan (Ohm)
+            </p>
+
+            <div id="power"  style="border: 1px solid rgb(104, 248, 169); height: 200px; overflow: auto; padding: 10px; text-align: justify; width: 400px;">
+                <b>POWER/DAYA :</b> <br>
+                Contoh menghitung daya, Jika sebuah pompa air dengan spesifikasi: 220V dan 1.5A, maka total daya yang dikonsumsi oleh pompa tersebuat = 330 watt <br>
+                <br>
+                Input Volt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="nilai1" class="daya" onkeyup="power()" /> <br>
+                Input Ampere <input type="text" id="nilai2" class="daya" onkeyup="power()" /> <br>
+                Total Daya &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="nilai3" class="daya" />
+            </div>
+
+            <div id="volt"  style="border: 1px solid rgb(104, 248, 169); height: 200px; overflow: auto; padding: 10px; text-align: justify; width: 400px;">
+                <b>VOLTAGE :</b> <br>
+                Contoh menghitung tegangan jatuh pada sebuah perangkat. Jika sebuah elemen pemanas dengan spesifikasi: 100 ohm dan 1.5A, maka tegangan jatuh pada elemen pemanas tersebut pada saat dihubungkan ke tegangan PLN 220V adalah 150V <br>
+                <br>
+                Input Resistance <input type="text" id="nilai4"  onkeyup="volt()" /> <br>
+                Input Ampere &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="nilai5"  onkeyup="volt()" /> <br>
+                Total Voltage&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="nilai6" />
+                </div>
+
+            <div id="arus"  style="border: 1px solid rgb(104, 248, 169); height: 200px; overflow: auto; padding: 10px; text-align: justify; width: 400px;">
+                <b>AMPERE :</b> <br>
+                Contoh menghitung Arus pada sebuah perangkat. Jika sebuah elemen pemanas dengan spesifikasi: 220V dan 100 Ohm, maka Arus yang dibutuhkan elemen pemanas tersebut pada saat dihubungkan ke tegangan PLN 220V adalah 2.2A <br>
+                <br>
+                Input Voltage&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="nilai7"  onkeyup="ampere()" /> <br>
+                Input Resistance <input type="text" id="nilai8"  onkeyup="ampere()" /> <br>
+                Total Ampere &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="nilai9" />
+
+                </div>
+                
+            <div id="hambatan"  style="border: 1px solid rgb(104, 248, 169); height: 200px; overflow: auto; padding: 10px; text-align: justify; width: 400px;">
+                <b>RESISTANCE :</b> <br>
+                Contoh menghitung Resistance pada sebuah perangkat. Jika sebuah elemen pemanas dengan spesifikasi: 220V dan 2.2A, maka total Resistance pada elemen tersebut adalah 100 Ohm <br>
+                <br>
+                Input Voltage&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="nilai10"  onkeyup="resistance()" /> <br>
+                Input Ampere &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="nilai11"  onkeyup="resistance()" /> <br>
+                Total Resistance <input type="text" id="nilai12" />
+                </div>
+
+
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+.img-responsive {
+  max-width: 100%; 
+  display: block
+  height: auto;
+  }
+  h1{
+		position: absolute;
+    top: 20px;
+    left: 100px;
+		z-index: 1;
+		color: #fff;
+  }
+  p{
+    position: absolute;
+    top: 80px;
+    left: 40px;
+		z-index: 2;
+		color: #fff;
+    
+  }
+
+  #power{
+    position: absolute;
+    top: 400px;
+    left: 150px;
+		z-index: 2;
+		color: #fff;
+    
+  }
+
+  #volt{
+    position: absolute;
+    top: 400px;
+    left: 770px;
+		z-index: 2;
+		color: #fff;
+    
+  }
+
+  #arus{
+    position: absolute;
+    top: 700px;
+    left: 150px;
+		z-index: 2;
+		color: #fff;
+    
+  }
+
+  #hambatan{
+    position: absolute;
+    top: 700px;
+    left: 770px;
+		z-index: 2;
+		color: #fff;
+    
+  }
